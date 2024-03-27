@@ -4,40 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>K4 Jos Gas Asik</title>
-</head>
-<body>
-    
- <!-- The grid: four columns -->
-<div class="row">
-  <div class="column">
-    <img src="img_nature.jpg" alt="Nature" onclick="myFunction(this);">
-  </div>
-  <div class="column">
-    <img src="img_snow.jpg" alt="Snow" onclick="myFunction(this);">
-  </div>
-  <div class="column">
-    <img src="img_mountains.jpg" alt="Mountains" onclick="myFunction(this);">
-  </div>
-  <div class="column">
-    <img src="img_lights.jpg" alt="Lights" onclick="myFunction(this);">
-  </div>
-</div>
-
-<!-- The expanding image container -->
-<div class="container">
-  <!-- Close the image -->
-  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
-
-  <!-- Expanded image -->
-  <img id="expandedImg" style="width:100%">
-
-  <!-- Image text -->
-  <div id="imgtext"></div>
-</div>
-  
-
-</body>
-</html>
 
     <style>
       footer {
@@ -48,10 +14,35 @@
         margin: 2px;
       }
     </style>
-
-
   </head>
   <body>
+    <div class="row">
+      <div class="column">
+        <img src="img_nature.jpg" alt="Nature" onclick="myFunction(this);" />
+      </div>
+      <div class="column">
+        <img src="img_snow.jpg" alt="Snow" onclick="myFunction(this);" />
+      </div>
+      <div class="column">
+        <img
+          src="img_mountains.jpg"
+          alt="Mountains"
+          onclick="myFunction(this);"
+        />
+      </div>
+      <div class="column">
+        <img src="img_lights.jpg" alt="Lights" onclick="myFunction(this);" />
+      </div>
+    </div>
+
+    <div class="container">
+      <span onclick="this.parentElement.style.display='none'" class="closebtn"
+        >&times;</span
+      >
+      <img id="expandedImg" style="width: 120%" />
+      <div id="imgtext"></div>
+    </div>
+
     <nav aria-label="Page navigation example">
       <ul class="pagination">
         <li class="page-item">
@@ -77,9 +68,11 @@
     </nav>
 
     <footer>
-      <p>Author: K4<br>
-      <a href="mailto:k4@gmail.com">k4@gmail.com</a></p>
+      <p>
+        Author: K4<br />
+        <a href="mailto:k4@gmail.com">k4@gmail.com</a>
+      </p>
     </footer>
-=======
+    =======
   </body>
 </html>
